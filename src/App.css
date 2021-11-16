@@ -2,8 +2,56 @@
   box-sizing: border-box;
 }
 body {
-  background-color: rgb(238,118,0);
-  color: rgb(255,227,159);
+  background-color: #fff;
+  color: #353535;
   max-width: 100%;
   min-height: 100%;
+}
+#header,
+#footer {
+  background-color: #3c6e71;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #d9d9d9;
+}
+#header,
+#navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#header {
+  height: 10vh;
+  font-size: calc(7px + 2vmin);
+}
+#footer {
+  height: 5vh;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-size: calc(1px + 2vmin);
+}
+#navbar {
+  height: 5vh;
+  width: 100%;
+  margin-top: 10vh;
+  display: flex;
+  background-color: #284b63;
+  color: #d9d9d9;
+  font-size: calc(3px + 2vmin);
+}
+.nav-links {
+  width: 40vw;
+  display: flex;
+  justify-self: right;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+#store-main {
+  margin-top: 15vh;
+  margin-bottom: 6vh;
 }
