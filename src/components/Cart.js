@@ -2,7 +2,7 @@ import React from "react";
 
 function Cart() {
   return (
-    <div id="cart-sec">
+    <div className="store-component" id="cart-sec">
       <h2>Cart</h2>
     </div>
   );

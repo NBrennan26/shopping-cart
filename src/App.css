@@ -50,8 +50,7 @@ body {
   justify-content: space-between;
   align-items: center;
   list-style: none;
-}
-#store-main {
+}.store-component {
   margin-top: 15vh;
   margin-bottom: 6vh;
 }

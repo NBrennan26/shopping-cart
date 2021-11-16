@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
   return (
-    <div id="about-sec">
+    <div className="store-component" id="about-sec">
       <h2>About</h2>
     </div>
   );

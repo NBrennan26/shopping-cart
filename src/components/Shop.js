@@ -2,7 +2,7 @@ import React from "react";
 
 function Shop() {
   return (
-    <div id="shop-sec">
+    <div className="store-component" id="shop-sec">
       <h2>Shop</h2>
     </div>
   );
