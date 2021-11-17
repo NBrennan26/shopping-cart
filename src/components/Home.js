@@ -1,9 +1,12 @@
 import React from "react";
 
-function Home() {
+const Home = (props) => {
+
+  console.log(props.testState)
   return (
     <div className="store-component" id="home-sec">
       <h2>Home</h2>
+      <h3>{props.testState}</h3>
     </div>
   );
 }
