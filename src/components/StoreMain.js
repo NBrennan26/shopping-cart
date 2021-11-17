@@ -23,7 +23,7 @@ function StoreMain() {
   return (
     <div className="store-component">
       <Routes>
-        <Route path="/home" element={<Home testState={testState} />} />
+        <Route path="/" element={<Home testState={testState} />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/about" element={<About />} />
         <Route path="/cart" element={<Cart />} />
