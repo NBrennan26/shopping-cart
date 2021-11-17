@@ -41,6 +41,7 @@ body {
   width: 100%;
   margin-top: 10vh;
   display: flex;
+  justify-content: center;
   background-color: #284b63;
   color: #d9d9d9;
   font-size: calc(3px + 2vmin);
@@ -56,4 +57,23 @@ body {
 .store-component {
   margin-top: 15vh;
   margin-bottom: 6vh;
+}
+.shop-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 100%;
+  min-width: 250px;
+  height: 30vh;
+  min-height: 250px;
+}
+#shop-sec {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.letter-disp {
+  font-size: calc(30px + 2vmin);
+  margin-top: 5%;
+  margin-bottom: 8%;
 }

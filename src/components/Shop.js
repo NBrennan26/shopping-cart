@@ -7,9 +7,11 @@ const Shop = (props) => {
 
   return (
     <div className="store-component" id="shop-sec">
-      <h2>Shop</h2>
       {storeInventory.map((item) => {
-        return <ShopItem key={item.id} />;
+        return <ShopItem
+          key={item.id}
+          state={item}
+        />;
       })}
     </div>
   );

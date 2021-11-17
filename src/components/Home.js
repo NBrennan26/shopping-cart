@@ -7,14 +7,14 @@ const Home = (props) => {
     return Math.floor(Math.random() * 26) + 1;
   };
 
-  let featuredLetter = storeInventory[randomNumber()].title;
+  let featuredLetter = storeInventory[randomNumber()].letter;
 
   return (
     <div className="store-component" id="home-sec">
       <h2>This is a Store for Letters</h2>
       <h6>Please buy some</h6>
       <div>
-        Our current <b>Featured Letter</b> is the {featuredLetter}
+        Our current <b>Featured Letter</b> is {featuredLetter}
       </div>
     </div>
   );
