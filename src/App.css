@@ -9,13 +9,11 @@ body {
 }
 #header,
 #footer {
-  background-color: #3c6e71;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #d9d9d9;
 }
 #header,
 #navbar {
@@ -26,6 +24,8 @@ body {
 #header {
   height: 10vh;
   font-size: calc(7px + 2vmin);
+  background-color: #3c6e71;
+  color: #d9d9d9;
 }
 #footer {
   height: 5vh;
@@ -33,6 +33,8 @@ body {
   bottom: 0;
   right: 0;
   font-size: calc(1px + 2vmin);
+  background-color: #284b63;
+  color: #d9d9d9;
 }
 #navbar {
   height: 5vh;
@@ -50,7 +52,8 @@ body {
   justify-content: space-between;
   align-items: center;
   list-style: none;
-}.store-component {
+}
+.store-component {
   margin-top: 15vh;
   margin-bottom: 6vh;
 }
