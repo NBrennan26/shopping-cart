@@ -6,11 +6,12 @@ const ShopItem = (props) => {
 
   return (
     <div className="shop-item">
-      <span class="letter-disp">{state.letter}</span>
+      <span className="letter-disp">{state.letter}</span>
       <span>{state.desc}</span>
       <span>{state.price} points</span>
       <span>Total Available: {state.amount}</span>
       <span>Add to Cart</span>
+      <button type="button" onClick={() => {props.addToCart(state.id)}}>Add to Cart</button>
     </div>
   );
 };
