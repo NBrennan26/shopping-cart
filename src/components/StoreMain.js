@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
+import Inventory from "./Inventory";
 import Home from "./Home";
 import Shop from "./Shop";
 import About from "./About";
@@ -14,6 +15,10 @@ function StoreMain() {
   };
 
   updateState();
+
+  const storeInventory = Inventory
+
+  console.log(storeInventory)
 
   return (
     <div className="store-component">
