@@ -16,13 +16,16 @@ function StoreMain() {
 
   updateState();
 
-  const storeInventory = Inventory
+  const storeInventory = Inventory;
 
   return (
     <div className="store-component">
       <Routes>
         <Route path="/" element={<Home storeInventory={storeInventory} />} />
-        <Route path="/shop" element={<Shop storeInventory={storeInventory} />} />
+        <Route
+          path="/shop"
+          element={<Shop storeInventory={storeInventory} />}
+        />
         <Route path="/about" element={<About />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="*" element={<NotFound />} />

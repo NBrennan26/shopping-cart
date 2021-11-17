@@ -1,4 +1,3 @@
-
 const Inventory = [
   {
     id: "0",
@@ -189,5 +188,5 @@ const Inventory = [
     desc: "The Letter Z",
     amount: 1,
   },
-]
-export default Inventory
+];
+export default Inventory;
