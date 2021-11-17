@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header";
 import NavBar from "./components/NavBar";
@@ -8,12 +8,12 @@ import StoreMain from "./components/StoreMain";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <Router>
       <Header />
       <NavBar />
       <StoreMain />
       <Footer />
-    </BrowserRouter>
+    </Router>
   );
 };
 

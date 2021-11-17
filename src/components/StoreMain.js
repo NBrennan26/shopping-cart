@@ -10,7 +10,7 @@ function StoreMain() {
   const [testState, setTestState] = useState("Test");
 
   const updateState = () => {
-    if (testState === "") setTestState("Test Test");
+    if (testState === "Test") setTestState("Test Test");
   };
 
   updateState();
@@ -18,7 +18,7 @@ function StoreMain() {
   return (
     <div className="store-component">
       <Routes>
-        <Route path="/home" element={<Home />} testState={testState} />
+        <Route path="/home" element={<Home testState={testState} />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/about" element={<About />} />
         <Route path="/cart" element={<Cart />} />
