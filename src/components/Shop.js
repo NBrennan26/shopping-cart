@@ -10,6 +10,7 @@ const Shop = (props) => {
       {storeInventory.map((item) => {
         return <ShopItem key={item.id} state={item} addToCart={addToCart} />;
       })}
+      <a href="#header" id="to-top">Top of Page</a>
     </div>
   );
 };

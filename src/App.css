@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #fff;
+  background: #fff;
   color: #353535;
   max-width: 100%;
   min-height: 100%;
@@ -24,7 +24,7 @@ body {
 #header {
   height: 10vh;
   font-size: calc(7px + 2vmin);
-  background-color: #3c6e71;
+  background: #3c6e71;
   color: #d9d9d9;
 }
 #footer {
@@ -33,8 +33,11 @@ body {
   bottom: 0;
   right: 0;
   font-size: calc(1px + 2vmin);
-  background-color: #284b63;
+  background: #284b63;
   color: #d9d9d9;
+}
+#footer:hover {
+  color: white;
 }
 #navbar {
   height: 5vh;
@@ -42,10 +45,9 @@ body {
   margin-top: 10vh;
   display: flex;
   justify-content: center;
-  background-color: #284b63;
+  background: #284b63;
   font-size: calc(3px + 2vmin);
-  color:#282e63;
-
+  color: #282e63;
 }
 .nav-links {
   width: 40vw;
@@ -62,7 +64,6 @@ body {
 }
 .nav-link:hover {
   color: #3c6e71;
-  /* color: #282e63; */
 }
 .store-component {
   margin-top: 15vh;
@@ -93,4 +94,36 @@ body {
 .cart-letter {
   font-size: calc(40px + 2vmin);
   color: #284b63;
+}
+#to-top,
+#to-top:visited {
+  grid-column: span 3;
+  color: #284b63;
+  text-decoration: none;
+  text-align: right;
+}
+#to-top:hover {
+  color: #282e63;
+}
+.increase-button, .decrease-button, .delete-button  {
+  border: none;
+  display: inline-block;
+  text-decoration: none;
+  background: rgba(255, 0, 0, 0.75);
+  color: white;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  transition: .4s;
+}
+.increase-button, .decrease-button {
+  background: #282e63;
+}
+.increase-button:hover, .decrease-button:hover {
+  background: #1f119c;
+}
+.delete-button:hover{
+  background: rgb(255, 0, 0);
 }
