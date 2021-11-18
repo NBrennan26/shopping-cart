@@ -90,6 +90,8 @@ body {
 }
 .cart-item {
   border: 2px solid black;
+  /* display: grid;
+  grid-template-columns: 10vw 1fr; */
 }
 .cart-letter {
   font-size: calc(40px + 2vmin);
@@ -119,11 +121,11 @@ body {
   transition: .4s;
 }
 .increase-button, .decrease-button {
-  background: #282e63;
+  background: #142a53;
 }
 .increase-button:hover, .decrease-button:hover {
-  background: #1f119c;
+  background: #284b63;
 }
 .delete-button:hover{
-  background: rgb(255, 0, 0);
+  background: red;
 }
