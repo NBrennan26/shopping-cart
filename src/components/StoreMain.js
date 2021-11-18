@@ -25,23 +25,11 @@ function StoreMain() {
     }
   };
 
-  const handleChangeQuantity = (id, num) => {
-    const mappedCart = userCart.map((item) => {
-      if (item.id === id) {
-        const curItem = item;
-        const newQuant = num;
-        const source = { quantity: newQuant };
-        const newItem = Object.assign(curItem, source);
-        return newItem;
-      }
-      return item;
-    });
-    setUserCart(mappedCart);
-  };
   const handleIncreaseQuantity = (id) => {
     const mappedCart = userCart.map((item) => {
-      if (item.id === id) {
-        const source = { quantity: item.quantity + 1 };
+      const newQuantity = item.quantity + 1
+      if (item.id === id && newQuantity <= item.available) {
+        const source = { quantity: newQuantity };
         const newItem = Object.assign(item, source);
         return newItem;
       }
@@ -49,9 +37,11 @@ function StoreMain() {
     });
     setUserCart(mappedCart);
   };
+
   const handleDecreaseQuantity = (id) => {
     const mappedCart = userCart.map((item) => {
-      if (item.id === id) {
+      const newQuantity = item.quantity - 1
+      if (item.id === id && newQuantity >= 0) {
         const source = { quantity: item.quantity - 1 };
         const newItem = Object.assign(item, source);
         return newItem;
@@ -77,7 +67,6 @@ function StoreMain() {
           element={
             <Cart
               userCart={userCart}
-              handleChangeQuantity={handleChangeQuantity}
               handleIncreaseQuantity={handleIncreaseQuantity}
               handleDecreaseQuantity={handleDecreaseQuantity}
             />
