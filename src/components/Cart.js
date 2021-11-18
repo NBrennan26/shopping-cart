@@ -12,7 +12,7 @@ const Cart = (props) => {
       {userCart.map((item) => {
         return (
           <div className="cart-item" key={item.id}>
-            <span>{item.letter}</span>
+            <span className="cart-letter">{item.letter}</span>
             <span>{item.price}</span>
             <span>{item.quantity}</span>
             <button

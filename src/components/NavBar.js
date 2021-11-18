@@ -6,16 +6,19 @@ function NavBar() {
     <nav id="navbar">
       <ul className="nav-links">
         <li>
-          <NavLink to="/">Home</NavLink>
+          <NavLink className="nav-link" to="/">Home</NavLink>
         </li>
+        |
         <li>
-          <NavLink to="/shop">Shop</NavLink>
+          <NavLink className="nav-link" to="/shop">Shop</NavLink>
         </li>
+        |
         <li>
-          <NavLink to="/cart">Check Out</NavLink>
+          <NavLink className="nav-link" to="/cart">Check Out</NavLink>
         </li>
+        |
         <li>
-          <NavLink to="/about">About</NavLink>
+          <NavLink className="nav-link" to="/about">About</NavLink>
         </li>
       </ul>
     </nav>

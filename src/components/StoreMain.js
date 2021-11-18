@@ -25,6 +25,8 @@ function StoreMain() {
         const source = { quantity: newQuantity };
         const newItem = Object.assign(item, source);
         return newItem;
+      } else if (item.id === id && newQuantity > item.available) {
+        alert(`Only ${item.available} letter ${item.letter}'s available`)
       }
       return item;
     });
