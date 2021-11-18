@@ -4,7 +4,7 @@ const Cart = (props) => {
   const userCart = props.userCart;
   const handleIncreaseQuantity = props.handleIncreaseQuantity;
   const handleDecreaseQuantity = props.handleDecreaseQuantity;
-  console.log(userCart);
+  const handleDeleteItem = props.handleDeleteItem;
 
   return (
     <div className="store-component" id="cart-sec">
@@ -33,13 +33,19 @@ const Cart = (props) => {
             >
               -
             </button>
-            <button className="delete-button">X</button>
+            <button
+              className="delete-button"
+              onClick={() => {
+                handleDeleteItem(item.id);
+              }}
+            >
+              X
+            </button>
           </div>
         );
       })}
       <div>
         <button>Checkout</button>
-        <button>Update Cart</button>
       </div>
     </div>
   );

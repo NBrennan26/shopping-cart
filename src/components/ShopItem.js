@@ -1,8 +1,7 @@
 import React from "react";
 
 const ShopItem = (props) => {
-
-  const state = props.state
+  const state = props.state;
 
   return (
     <div className="shop-item">
@@ -11,7 +10,14 @@ const ShopItem = (props) => {
       <span>{state.price} points</span>
       <span>Total Available: {state.amount}</span>
       <span>Add to Cart</span>
-      <button type="button" onClick={() => {props.addToCart(state.id)}}>Add to Cart</button>
+      <button
+        type="button"
+        onClick={() => {
+          props.addToCart(state.id);
+        }}
+      >
+        Add to Cart
+      </button>
     </div>
   );
 };

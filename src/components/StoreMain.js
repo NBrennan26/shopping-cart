@@ -8,14 +8,7 @@ import Cart from "./Cart";
 import NotFound from "./NotFound";
 
 function StoreMain() {
-  // const [testState, setTestState] = useState("Test");
-  // const updateState = () => {
-  //   if (testState === "Test") setTestState("Test Test");
-  // };
-  // updateState();
-
   const [userCart, setUserCart] = useState([]);
-
   const storeInventory = Inventory;
 
   const addToCart = (id) => {
@@ -27,7 +20,7 @@ function StoreMain() {
 
   const handleIncreaseQuantity = (id) => {
     const mappedCart = userCart.map((item) => {
-      const newQuantity = item.quantity + 1
+      const newQuantity = item.quantity + 1;
       if (item.id === id && newQuantity <= item.available) {
         const source = { quantity: newQuantity };
         const newItem = Object.assign(item, source);
@@ -40,7 +33,7 @@ function StoreMain() {
 
   const handleDecreaseQuantity = (id) => {
     const mappedCart = userCart.map((item) => {
-      const newQuantity = item.quantity - 1
+      const newQuantity = item.quantity - 1;
       if (item.id === id && newQuantity >= 0) {
         const source = { quantity: item.quantity - 1 };
         const newItem = Object.assign(item, source);
@@ -49,6 +42,11 @@ function StoreMain() {
       return item;
     });
     setUserCart(mappedCart);
+  };
+
+  const handleDeleteItem = (id) => {
+    const filteredCart = userCart.filter((item) => item.id !== id);
+    setUserCart(filteredCart);
   };
 
   return (
@@ -69,6 +67,7 @@ function StoreMain() {
               userCart={userCart}
               handleIncreaseQuantity={handleIncreaseQuantity}
               handleDecreaseQuantity={handleDecreaseQuantity}
+              handleDeleteItem={handleDeleteItem}
             />
           }
         />
