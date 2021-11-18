@@ -4,7 +4,8 @@ const Inventory = [
     letter: "A",
     price: 1,
     desc: "The Letter A",
-    amount: 9,
+    quantity: 1,
+    available: 9,
     image: "letA",
   },
   {
@@ -12,7 +13,8 @@ const Inventory = [
     letter: "B",
     price: 3,
     desc: "The Letter B",
-    amount: 2,
+    quantity: 1,
+    available: 2,
     image: "letB",
   },
   {
@@ -20,7 +22,8 @@ const Inventory = [
     letter: "C",
     price: 3,
     desc: "The Letter C",
-    amount: 2,
+    quantity: 1,
+    available: 2,
     image: "letC",
   },
   {
@@ -28,7 +31,8 @@ const Inventory = [
     letter: "D",
     price: 2,
     desc: "The Letter D",
-    amount: 4,
+    quantity: 1,
+    available: 4,
     image: "letD",
   },
   {
@@ -36,7 +40,8 @@ const Inventory = [
     letter: "E",
     price: 1,
     desc: "The Letter E",
-    amount: 12,
+    quantity: 1,
+    available: 12,
     image: "letE",
   },
   {
@@ -44,7 +49,8 @@ const Inventory = [
     letter: "F",
     price: 4,
     desc: "The Letter F",
-    amount: 2,
+    quantity: 1,
+    available: 2,
     image: "letF",
   },
   {
@@ -52,7 +58,8 @@ const Inventory = [
     letter: "G",
     price: 2,
     desc: "The Letter G",
-    amount: 3,
+    quantity: 1,
+    available: 3,
     image: "letG",
   },
   {
@@ -60,7 +67,8 @@ const Inventory = [
     letter: "H",
     price: 4,
     desc: "The Letter H",
-    amount: 2,
+    quantity: 1,
+    available: 2,
     image: "letH",
   },
   {
@@ -68,7 +76,8 @@ const Inventory = [
     letter: "I",
     price: 1,
     desc: "The Letter I",
-    amount: 9,
+    quantity: 1,
+    available: 9,
     image: "letI",
   },
   {
@@ -76,7 +85,8 @@ const Inventory = [
     letter: "J",
     price: 8,
     desc: "The Letter J",
-    amount: 1,
+    quantity: 1,
+    available: 1,
     image: "letJ",
   },
   {
@@ -84,7 +94,8 @@ const Inventory = [
     letter: "K",
     price: 5,
     desc: "The Letter K",
-    amount: 9,
+    quantity: 1,
+    available: 9,
     image: "letK",
   },
   {
@@ -92,7 +103,8 @@ const Inventory = [
     letter: "L",
     price: 1,
     desc: "The Letter L",
-    amount: 4,
+    quantity: 1,
+    available: 4,
     image: "letL",
   },
   {
@@ -100,7 +112,8 @@ const Inventory = [
     letter: "M",
     price: 3,
     desc: "The Letter M",
-    amount: 2,
+    quantity: 1,
+    available: 2,
     image: "letM",
   },
   {
@@ -108,7 +121,8 @@ const Inventory = [
     letter: "N",
     price: 6,
     desc: "The Letter N",
-    amount: 1,
+    quantity: 1,
+    available: 1,
     image: "letN",
   },
   {
@@ -116,7 +130,8 @@ const Inventory = [
     letter: "O",
     price: 1,
     desc: "The Letter O",
-    amount: 8,
+    quantity: 1,
+    available: 8,
     image: "letO",
   },
   {
@@ -124,7 +139,8 @@ const Inventory = [
     letter: "P",
     price: 3,
     desc: "The Letter P",
-    amount: 2,
+    quantity: 1,
+    available: 2,
     image: "letP",
   },
   {
@@ -132,7 +148,8 @@ const Inventory = [
     letter: "Q",
     price: 10,
     desc: "The Letter Q",
-    amount: 1,
+    quantity: 1,
+    available: 1,
     image: "letQ",
   },
   {
@@ -140,7 +157,8 @@ const Inventory = [
     letter: "R",
     price: 6,
     desc: "The Letter R",
-    amount: 1,
+    quantity: 1,
+    available: 1,
     image: "letR",
   },
   {
@@ -148,7 +166,8 @@ const Inventory = [
     letter: "S",
     price: 1,
     desc: "The Letter S",
-    amount: 4,
+    quantity: 1,
+    available: 4,
     image: "letS",
   },
   {
@@ -156,7 +175,8 @@ const Inventory = [
     letter: "T",
     price: 1,
     desc: "The Letter T",
-    amount: 6,
+    quantity: 1,
+    available: 6,
     image: "letT",
   },
   {
@@ -164,7 +184,8 @@ const Inventory = [
     letter: "U",
     price: 1,
     desc: "The Letter U",
-    amount: 4,
+    quantity: 1,
+    available: 4,
     image: "letU",
   },
   {
@@ -172,7 +193,8 @@ const Inventory = [
     letter: "V",
     price: 4,
     desc: "The Letter V",
-    amount: 2,
+    quantity: 1,
+    available: 2,
     image: "letV",
   },
   {
@@ -180,7 +202,8 @@ const Inventory = [
     letter: "W",
     price: 4,
     desc: "The Letter W",
-    amount: 2,
+    quantity: 1,
+    available: 2,
     image: "letW",
   },
   {
@@ -188,7 +211,8 @@ const Inventory = [
     letter: "X",
     price: 8,
     desc: "The Letter X",
-    amount: 1,
+    quantity: 1,
+    available: 1,
     image: "letX",
   },
   {
@@ -196,7 +220,8 @@ const Inventory = [
     letter: "Y",
     price: 4,
     desc: "The Letter Y",
-    amount: 2,
+    quantity: 1,
+    available: 2,
     image: "letY",
   },
   {
@@ -204,7 +229,8 @@ const Inventory = [
     letter: "Z",
     price: 10,
     desc: "The Letter Z",
-    amount: 1,
+    quantity: 1,
+    available: 1,
     image: "letZ",
   },
   {
@@ -212,7 +238,8 @@ const Inventory = [
     letter: "Blank",
     price: 0,
     desc: "Endless Possibilities",
-    amount: 2,
+    quantity: 1,
+    available: 2,
     image: "letBlank",
   },
 ];
