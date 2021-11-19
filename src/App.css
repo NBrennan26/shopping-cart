@@ -131,14 +131,14 @@ body {
 .cart-qty {
   margin-left: 20%;
 }
-#to-top,
-#to-top:visited {
+.inner-nav,
+.inner-nav:visited {
   grid-column: span 3;
   color: #284b63;
   text-decoration: none;
   text-align: right;
 }
-#to-top:hover {
+.inner-nav:hover {
   color: #282e63;
 }
 .increase-btn,
@@ -199,4 +199,14 @@ body {
 #checkout-btn:hover {
   background: #284b63;
 }
-
+#about-sec {
+  display: grid;
+  justify-content: center;
+}
+#link-span {
+  justify-self: center;
+}
+#github-img {
+  width: 40px;
+  height: 40px;
+}
