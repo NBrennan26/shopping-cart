@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import Inventory from "./Inventory";
 import Home from "./Home";
@@ -9,7 +9,41 @@ import NotFound from "./NotFound";
 
 function StoreMain() {
   const [userCart, setUserCart] = useState([]);
+  const [cartTotal, setCartTotal] = useState(0);
+  const [letterCount, setLetterCount] = useState(0)
   const storeInventory = Inventory;
+
+  useEffect(() => {
+    const mappedCart = userCart.map((item) => {
+      let currentTotal = 0;
+      if (item.quantity > 0) {
+        currentTotal += item.price * item.quantity;
+        return currentTotal;
+      }
+      return currentTotal;
+    });
+    setCartTotal(
+      mappedCart.reduce(function (a, b) {
+        return a + b;
+      }, 0)
+    );
+  }, [userCart, cartTotal]);
+
+  useEffect (() => {
+    const mappedCart = userCart.map((item) => {
+      let currentTotal = 0;
+      if (item.quantity > 0) {
+        currentTotal += item.quantity;
+        return currentTotal;
+      }
+      return currentTotal;
+    });
+    setLetterCount(
+      mappedCart.reduce(function (a, b) {
+        return a + b;
+      }, 0)
+    );
+  }, [userCart, letterCount])
 
   const addToCart = (id) => {
     const newItem = storeInventory.filter((item) => item.id === id);
@@ -26,7 +60,7 @@ function StoreMain() {
         const newItem = Object.assign(item, source);
         return newItem;
       } else if (item.id === id && newQuantity > item.available) {
-        alert(`Only ${item.available} letter ${item.letter}'s available`)
+        alert(`Only ${item.available} letter ${item.letter}'s available`);
       }
       return item;
     });
@@ -67,6 +101,8 @@ function StoreMain() {
           element={
             <Cart
               userCart={userCart}
+              cartTotal={cartTotal}
+              letterCount={letterCount}
               handleIncreaseQuantity={handleIncreaseQuantity}
               handleDecreaseQuantity={handleDecreaseQuantity}
               handleDeleteItem={handleDeleteItem}

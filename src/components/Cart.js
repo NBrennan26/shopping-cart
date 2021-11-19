@@ -12,29 +12,31 @@ const Cart = (props) => {
       {userCart.map((item) => {
         return (
           <div className="cart-item" key={item.id}>
-            <span className="cart-letter">{item.letter}</span>
-            <span>{item.price}</span>
-            <span>{item.quantity}</span>
+            <span className="cart-ltr">{item.letter}</span>
+            <span className="cart-pts">Points: {item.price}</span>
+            <span className="cart-qty">Qty: {item.quantity}</span>
+            <div className="btn-container">
+              <button
+                className="increase-btn"
+                onClick={() => {
+                  console.log("Increase Click");
+                  handleIncreaseQuantity(item.id);
+                }}
+              >
+                +
+              </button>
+              <button
+                className="decrease-btn"
+                onClick={() => {
+                  console.log("Decrease Click");
+                  handleDecreaseQuantity(item.id);
+                }}
+              >
+                -
+              </button>
+            </div>
             <button
-              className="increase-button"
-              onClick={() => {
-                console.log("Increase Click");
-                handleIncreaseQuantity(item.id);
-              }}
-            >
-              +
-            </button>
-            <button
-              className="decrease-button"
-              onClick={() => {
-                console.log("Decrease Click");
-                handleDecreaseQuantity(item.id);
-              }}
-            >
-              -
-            </button>
-            <button
-              className="delete-button"
+              className="delete-btn"
               onClick={() => {
                 handleDeleteItem(item.id);
               }}
@@ -44,8 +46,13 @@ const Cart = (props) => {
           </div>
         );
       })}
-      <div>
-        <button>Checkout</button>
+      <div id="total-container">
+        <div>
+          <span>Letters in Cart: {props.letterCount}</span>
+          <br />
+          <span>Total Points: {props.cartTotal}</span>
+        </div>
+        <button id="checkout-btn">Checkout</button>
       </div>
     </div>
   );
