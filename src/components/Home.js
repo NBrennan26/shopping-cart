@@ -19,7 +19,7 @@ const Home = (props) => {
           Our current <b>Featured Letter</b> is <b>{featuredLetter}</b>
         </div>
       </div>
-      <div>
+      <div id="home-img-cntr">
         <img id="board-img" src={board} alt="scrabble-board" />
       </div>
     </div>

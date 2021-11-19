@@ -76,7 +76,11 @@ body {
   height: 40vw;
   margin-top: 10%;
 }
+#home-img-cntr {
+  justify-self: center;
+}
 #home-text {
+  justify-self: center;
   margin-left: 5%;
   margin-top: 5%;
 }
