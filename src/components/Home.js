@@ -1,5 +1,5 @@
 import React from "react";
-import board from "../assets/images/board"
+import board from "../assets/images/board.jpg";
 
 const Home = (props) => {
   const storeInventory = props.storeInventory;
@@ -12,17 +12,16 @@ const Home = (props) => {
 
   return (
     <div className="store-component" id="home-sec">
-    <div>
-      <h2>This is a Store for Letters</h2>
-      <h6>Please buy some</h6>
-      <div>
-        Our current <b>Featured Letter</b> is {featuredLetter}
+      <div id="home-text">
+        <h2>This is a Store for Letters</h2>
+        <h6>Please buy some</h6>
+        <div id="feat-let">
+          Our current <b>Featured Letter</b> is <b>{featuredLetter}</b>
+        </div>
       </div>
-    </div>
-    <div>
-      <img src={board} alt="scrabble-board" />
-    </div>
-      
+      <div>
+        <img id="board-img" src={board} alt="scrabble-board" />
+      </div>
     </div>
   );
 };

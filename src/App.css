@@ -65,6 +65,24 @@ body {
 .nav-link:hover {
   color: #3c6e71;
 }
+#home-sec {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#board-img {
+  max-width: 500px;
+  max-height: 500px;
+  width: 40vw;
+  height: 40vw;
+  margin-top: 10%;
+}
+#home-text {
+  margin-left: 5%;
+  margin-top: 5%;
+}
+#feat-let {
+  margin-top: 20%;
+}
 .store-component {
   margin-top: 15vh;
   margin-bottom: 6vh;

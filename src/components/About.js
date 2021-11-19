@@ -1,12 +1,14 @@
 import React from "react";
+import github from "../assets/images/github.jpg";
+
 
 function About() {
   return (
     <div className="store-component" id="about-sec">
-      <h2>About</h2>
-      <h3>Put contact info here</h3>
-      <h3>Maybe some blurb about Scrabble</h3>
-      <h4>A link to github</h4>
+    <br />
+      <p>We're just a simple Mom and Pop Shop that sells letters.</p>
+      <p>Check out more of our stores and projects here: </p>
+
     </div>
   );
 }
